@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .swipe-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .page {
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .video-container {
+    flex: 3;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .animal-name {
+    flex: 0.6;
+    background-color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100%;
+    padding: 10px;
+    border-radius: 0;
+    width: 100%;
+  }
+  
+  .details-box {
+    flex: 1.2;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .diet-type {
+    flex: 0.6;
+    background-color: #e0e0e0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+  }
+  
